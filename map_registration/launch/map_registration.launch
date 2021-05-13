@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- arguments -->
+  <arg name="config_path" default="$(find map_registration)/config/config.yaml"/>
+  
+  <node pkg="map_registration" type="main" name="main" output="screen">
+  	<param name="config_file" type="string" value="$(arg config_path)" />
+  </node>
+
+</launch>
+
+
